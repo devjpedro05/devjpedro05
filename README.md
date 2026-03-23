@@ -67,7 +67,7 @@ Projeto acadêmico desenvolvido em Assembly (NASM) e C, simulando registradores,
 <p align="center">
   <img
     alt="GitHub Stats"
-    src="https://github-readme-stats.vercel.app/api?username=devjpedro05&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000"
+    src="https://github-readme-stats.vercel.app/api?username=devjpedro05&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&hide_rank=true"
   />
   <img
     alt="Top Languages"
