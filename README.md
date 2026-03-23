@@ -81,7 +81,7 @@ Projeto acadêmico desenvolvido em Assembly (NASM) e C, simulando registradores,
 
 <p align="center">
   <a href="https://www.linkedin.com/in/devjpedro05/">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0F172A?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0F172A?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPGNpcmNsZSBjeD0iNSIgY3k9IjUiIHI9IjIuMiIgZmlsbD0id2hpdGUiLz48cmVjdCB4PSIzLjIiIHk9IjguMiIgd2lkdGg9IjMuNiIgaGVpZ2h0PSIxMi4yIiByeD0iMC44IiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik0xMCA4LjJoMy40NXYxLjY3aC4wNWMuNDgtLjkxIDEuNjUtMS44NyAzLjQtMS44NyAzLjYzIDAgNC4zIDIuMzkgNC4zIDUuNXY2LjloLTMuNnYtNi4xMmMwLTEuNDYtLjAzLTMuMzQtMi4wMy0zLjM0LTIuMDQgMC0yLjM2IDEuNi0yLjM2IDMuMjR2Ni4yMkgxMFY4LjJ6IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg%3D%3D" />
   </a>
   <a href="https://www.instagram.com/dev.jpedro/">
     <img alt="Instagram" src="https://img.shields.io/badge/Instagram-0F172A?style=for-the-badge&logo=instagram&logoColor=E879F9" />
