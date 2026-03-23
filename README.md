@@ -79,10 +79,20 @@ Projeto acadêmico desenvolvido em Assembly (NASM) e C, simulando registradores,
 
 ## 🌐 Conecte-se comigo
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0F172A?style=for-the-badge&logo=linkedin&logoColor=38BDF8)](https://www.linkedin.com/in/devjpedro05/)
-[![Instagram](https://img.shields.io/badge/Instagram-0F172A?style=for-the-badge&logo=instagram&logoColor=E879F9)](https://www.instagram.com/dev.jpedro/)
-[![GitHub](https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/devjpedro05)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-0F172A?style=for-the-badge&logo=whatsapp&logoColor=22D3EE)](https://wa.me/559193557595)
+<p align="center">
+  <a href="https://www.linkedin.com/in/devjpedro05/">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0F172A?style=for-the-badge&logo=linkedin&logoColor=0A66C2" />
+  </a>
+  <a href="https://www.instagram.com/dev.jpedro/">
+    <img alt="Instagram" src="https://img.shields.io/badge/Instagram-0F172A?style=for-the-badge&logo=instagram&logoColor=E879F9" />
+  </a>
+  <a href="https://github.com/devjpedro05">
+    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://wa.me/559193557595">
+    <img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-0F172A?style=for-the-badge&logo=whatsapp&logoColor=22D3EE" />
+  </a>
+</p>
 
 ---
 
