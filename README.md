@@ -66,7 +66,7 @@ Projeto acadêmico desenvolvido em Assembly (NASM) e C, simulando registradores,
   />
   <img
     alt="Top Languages"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=devjpedro05&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&langs_count=6&hide=html,css&exclude_repo=Assembly,Processador-Assembly,CRUD-Java,JavaSwingApp,POO-C-,caca-tesouro-desktop,devjpedro05"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=devjpedro05&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&langs_count=4&hide=html,css&exclude_repo=Assembly,Processador-Assembly,CRUD-Java,JavaSwingApp,POO-C-,caca-tesouro-desktop,devjpedro05&custom_title=Linguagens%20em%20destaque"
   />
 </p>
 
