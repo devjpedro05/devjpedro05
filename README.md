@@ -22,7 +22,12 @@ Tenho foco em construir soluções modernas, funcionais e bem estruturadas, com 
 ![C](https://img.shields.io/badge/C-0F172A?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-0F172A?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-0F172A?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Java](https://img.shields.io/badge/Java-0F172A?style=for-the-badge&logo=openjdk&logoColor=F97316)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0F172A?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Python](https://img.shields.io/badge/Python-0F172A?style=for-the-badge&logo=python&logoColor=38BDF8)
+![Assembly](https://img.shields.io/badge/Assembly-0F172A?style=for-the-badge&logo=gnu-bash&logoColor=A78BFA)
+![HTML5](https://img.shields.io/badge/HTML5-0F172A?style=for-the-badge&logo=html5&logoColor=F97316)
+![CSS3](https://img.shields.io/badge/CSS3-0F172A?style=for-the-badge&logo=css3&logoColor=38BDF8)
 ![React](https://img.shields.io/badge/React-0F172A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vue.js](https://img.shields.io/badge/Vue.js-0F172A?style=for-the-badge&logo=vuedotjs&logoColor=42B883)
 ![Node.js](https://img.shields.io/badge/Node.js-0F172A?style=for-the-badge&logo=nodedotjs&logoColor=8CC84B)
@@ -66,7 +71,7 @@ Projeto acadêmico desenvolvido em Assembly (NASM) e C, simulando registradores,
   />
   <img
     alt="Top Languages"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=devjpedro05&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&langs_count=4&hide=html,css&exclude_repo=Assembly,Processador-Assembly,CRUD-Java,JavaSwingApp,POO-C-,caca-tesouro-desktop,devjpedro05&custom_title=Linguagens%20em%20destaque"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=devjpedro05&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000&langs_count=6&hide=html,css&exclude_repo=Assembly,Processador-Assembly,caca-tesouro-desktop,devjpedro05&custom_title=Linguagens%20em%20destaque"
   />
 </p>
 
