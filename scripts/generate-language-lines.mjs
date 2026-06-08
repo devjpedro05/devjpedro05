@@ -237,39 +237,93 @@ function compactNumber(value) {
 function createSvg(rows) {
   const total = rows.reduce((sum, row) => sum + row.lines, 0);
   const visibleRows = rows.slice(0, maxRows);
-  const width = 760;
-  const rowHeight = 46;
-  const height = 124 + visibleRows.length * rowHeight;
+  const width = 860;
+  const rowHeight = 54;
+  const height = 168 + visibleRows.length * rowHeight;
   const max = Math.max(...visibleRows.map((row) => row.lines), 1);
+  const scopeLabel = canReadPrivateRepos
+    ? "Repositórios públicos e privados autorizados"
+    : "Repositórios públicos";
+  const topLanguage = visibleRows[0]?.language || "N/A";
+  const topLines = visibleRows[0]?.lines || 0;
 
   const bars = visibleRows
     .map((row, index) => {
-      const y = 102 + index * rowHeight;
+      const y = 142 + index * rowHeight;
       const pct = total ? (row.lines / total) * 100 : 0;
-      const barWidth = Math.max(18, Math.round((row.lines / max) * 430));
+      const barWidth = Math.max(20, Math.round((row.lines / max) * 458));
       const color = palette[index % palette.length];
+      const rank = String(index + 1).padStart(2, "0");
+      const opacity = index === 0 ? "1" : "0.82";
 
       return `
-  <g>
-    <text x="34" y="${y + 15}" fill="#E2E8F0" font-size="15" font-weight="600">${escapeSvg(row.language)}</text>
-    <text x="34" y="${y + 34}" fill="#94A3B8" font-size="12">${compactNumber(row.lines)} linhas adicionadas</text>
-    <rect x="220" y="${y + 4}" width="430" height="12" rx="6" fill="#1E293B" opacity="0.95"/>
-    <rect x="220" y="${y + 4}" width="${barWidth}" height="12" rx="6" fill="${color}"/>
-    <text x="676" y="${y + 15}" fill="#CBD5E1" font-size="13" text-anchor="end">${pct.toFixed(1)}%</text>
+  <g opacity="${opacity}">
+    <rect x="28" y="${y - 19}" width="804" height="46" rx="14" fill="${index === 0 ? "url(#featuredRow)" : "#111C32"}" opacity="${index === 0 ? "0.75" : "0.34"}"/>
+    <text x="48" y="${y + 4}" fill="#64748B" font-size="11" font-weight="700" letter-spacing="1.4">${rank}</text>
+    <text x="82" y="${y + 4}" fill="#F8FAFC" font-size="16" font-weight="700">${escapeSvg(row.language)}</text>
+    <text x="82" y="${y + 23}" fill="#93C5FD" font-size="12">${compactNumber(row.lines)} linhas adicionadas</text>
+    <rect x="252" y="${y - 4}" width="458" height="12" rx="6" fill="#223047" opacity="0.9"/>
+    <rect x="252" y="${y - 4}" width="${barWidth}" height="12" rx="6" fill="${color}" filter="${index === 0 ? "url(#barGlow)" : "none"}"/>
+    <rect x="730" y="${y - 14}" width="70" height="28" rx="14" fill="#0B1224" stroke="#263853"/>
+    <text x="765" y="${y + 4}" fill="#E0F2FE" font-size="12" font-weight="700" text-anchor="middle">${pct.toFixed(1)}%</text>
   </g>`;
     })
     .join("");
 
-  return `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  return `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif" text-rendering="geometricPrecision">
   <title id="title">Linguagens por linhas criadas</title>
-  <desc id="desc">Grafico com linguagens calculadas por linhas adicionadas nos repositorios publicos de ${username}.</desc>
-  <rect width="${width}" height="${height}" rx="18" fill="#0F172A"/>
-  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="17" stroke="#334155" opacity="0.65"/>
-  <circle cx="638" cy="38" r="118" fill="#22D3EE" opacity="0.08"/>
-  <circle cx="704" cy="74" r="96" fill="#8B5CF6" opacity="0.08"/>
-  <text x="34" y="42" fill="#F8FAFC" font-size="22" font-weight="700">Linguagens por linhas criadas</text>
-  <text x="34" y="68" fill="#94A3B8" font-size="13">Baseado em linhas adicionadas nos commits dos repositorios publicos</text>
-  <text x="726" y="68" fill="#67E8F9" font-size="13" font-weight="600" text-anchor="end">${compactNumber(total)} linhas</text>
+  <desc id="desc">Gráfico com linguagens calculadas por linhas adicionadas nos repositórios autorizados de ${username}.</desc>
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="${width}" y2="${height}" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="56%" stop-color="#111A2F"/>
+      <stop offset="100%" stop-color="#0A1020"/>
+    </linearGradient>
+    <linearGradient id="cardStroke" x1="0" y1="0" x2="${width}" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.5"/>
+      <stop offset="48%" stop-color="#334155" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="featuredRow" x1="28" y1="0" x2="832" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.12"/>
+      <stop offset="42%" stop-color="#1E293B" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.12"/>
+    </linearGradient>
+    <radialGradient id="cornerGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(700 36) rotate(138) scale(220 170)">
+      <stop stop-color="#22D3EE" stop-opacity="0.26"/>
+      <stop offset="0.55" stop-color="#38BDF8" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(804 78) rotate(143) scale(190 150)">
+      <stop stop-color="#8B5CF6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="barGlow" x="-20%" y="-240%" width="140%" height="580%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.55 0" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M 38 0 L 0 0 0 38" fill="none" stroke="#38BDF8" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="${width}" height="${height}" rx="24" fill="url(#cardBg)"/>
+  <rect width="${width}" height="${height}" rx="24" fill="url(#grid)"/>
+  <rect width="${width}" height="${height}" rx="24" fill="url(#cornerGlow)"/>
+  <rect width="${width}" height="${height}" rx="24" fill="url(#violetGlow)"/>
+  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="23" stroke="url(#cardStroke)" stroke-opacity="0.72"/>
+  <rect x="28" y="28" width="112" height="28" rx="14" fill="#0B1224" stroke="#263853"/>
+  <text x="84" y="46" fill="#67E8F9" font-size="11" font-weight="800" letter-spacing="1.8" text-anchor="middle">MÉTRICA</text>
+  <text x="28" y="88" fill="#F8FAFC" font-size="27" font-weight="800">Linguagens por linhas criadas</text>
+  <text x="28" y="114" fill="#94A3B8" font-size="13">${scopeLabel}</text>
+  <rect x="586" y="30" width="246" height="76" rx="20" fill="#0B1224" fill-opacity="0.72" stroke="#263853"/>
+  <text x="610" y="58" fill="#94A3B8" font-size="12" font-weight="600">Principal</text>
+  <text x="610" y="86" fill="#F8FAFC" font-size="24" font-weight="800">${escapeSvg(topLanguage)}</text>
+  <text x="808" y="84" fill="#67E8F9" font-size="13" font-weight="800" text-anchor="end">${compactNumber(topLines)} linhas</text>
+  <text x="808" y="112" fill="#93C5FD" font-size="12" font-weight="700" text-anchor="end">${compactNumber(total)} linhas no total</text>
 ${bars}
 </svg>
 `;
