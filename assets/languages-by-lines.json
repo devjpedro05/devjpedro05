@@ -1,0 +1,70 @@
+{
+  "username": "devjpedro05",
+  "rows": [
+    {
+      "language": "Python",
+      "lines": 8818,
+      "repositories": [
+        "Set_Cover-Guloso",
+        "caca-tesouro-desktop"
+      ]
+    },
+    {
+      "language": "Assembly",
+      "lines": 3663,
+      "repositories": [
+        "Assembly",
+        "Processador-Assembly"
+      ]
+    },
+    {
+      "language": "JavaScript",
+      "lines": 2744,
+      "repositories": [
+        "Portifolio"
+      ]
+    },
+    {
+      "language": "CSS",
+      "lines": 1753,
+      "repositories": [
+        "Portifolio"
+      ]
+    },
+    {
+      "language": "C#",
+      "lines": 1308,
+      "repositories": [
+        "SistemaACS"
+      ]
+    },
+    {
+      "language": "C++",
+      "lines": 437,
+      "repositories": [
+        "MergeSort---Grupo-4"
+      ]
+    },
+    {
+      "language": "C",
+      "lines": 252,
+      "repositories": [
+        "Processador-Assembly"
+      ]
+    },
+    {
+      "language": "Java",
+      "lines": 175,
+      "repositories": [
+        "CRUD-Java"
+      ]
+    },
+    {
+      "language": "HTML",
+      "lines": 16,
+      "repositories": [
+        "Portifolio"
+      ]
+    }
+  ]
+}

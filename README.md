@@ -65,6 +65,9 @@ Projeto acadêmico desenvolvido em Assembly (NASM) e C, simulando registradores,
 ## 📊 Estatísticas do GitHub
 
 <p align="center">
+  <img src="./assets/languages-by-lines.svg" alt="Linguagens por linhas criadas" />
+  <br />
+  <br />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=devjpedro05&theme=tokyonight" alt="Estatísticas do GitHub" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=devjpedro05&theme=tokyonight" alt="Linguagens por repositório" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=devjpedro05&theme=tokyonight" alt="Linguagens por commits" />
