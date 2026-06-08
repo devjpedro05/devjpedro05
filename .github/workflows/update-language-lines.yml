@@ -22,8 +22,15 @@ jobs:
           node-version: 20
 
       - name: Generate language chart
-        run: node scripts/generate-language-lines.mjs
+        run: |
+          if [ -z "$PROFILE_STATS_TOKEN" ]; then
+            echo "PROFILE_STATS_TOKEN is not configured. Keeping the current private-repo chart."
+            exit 0
+          fi
+
+          node scripts/generate-language-lines.mjs
         env:
+          PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: devjpedro05
 

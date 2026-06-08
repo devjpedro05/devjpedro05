@@ -2,11 +2,57 @@
   "username": "devjpedro05",
   "rows": [
     {
+      "language": "C#",
+      "lines": 77794,
+      "repositories": [
+        "ApoloSurvey-MVP-",
+        "CRUD-C-",
+        "SistemaACS"
+      ]
+    },
+    {
+      "language": "XAML",
+      "lines": 25430,
+      "repositories": [
+        "ApoloSurvey-MVP-"
+      ]
+    },
+    {
+      "language": "CSS",
+      "lines": 11949,
+      "repositories": [
+        "Dia-das-mulheres",
+        "Portifolio",
+        "Projects",
+        "formulacomercial-landingpage"
+      ]
+    },
+    {
+      "language": "JavaScript",
+      "lines": 8947,
+      "repositories": [
+        "Dia-das-mulheres",
+        "Portifolio",
+        "Projects",
+        "formulacomercial-landingpage"
+      ]
+    },
+    {
       "language": "Python",
       "lines": 8818,
       "repositories": [
         "Set_Cover-Guloso",
         "caca-tesouro-desktop"
+      ]
+    },
+    {
+      "language": "HTML",
+      "lines": 4515,
+      "repositories": [
+        "Dia-das-mulheres",
+        "Portifolio",
+        "Projects",
+        "formulacomercial-landingpage"
       ]
     },
     {
@@ -18,24 +64,18 @@
       ]
     },
     {
-      "language": "JavaScript",
-      "lines": 2744,
+      "language": "C/C++",
+      "lines": 1400,
       "repositories": [
-        "Portifolio"
+        "ApoloSurvey-MVP-"
       ]
     },
     {
-      "language": "CSS",
-      "lines": 1753,
+      "language": "Java",
+      "lines": 521,
       "repositories": [
-        "Portifolio"
-      ]
-    },
-    {
-      "language": "C#",
-      "lines": 1308,
-      "repositories": [
-        "SistemaACS"
+        "CRUD-Estoque",
+        "CRUD-Java"
       ]
     },
     {
@@ -53,17 +93,10 @@
       ]
     },
     {
-      "language": "Java",
-      "lines": 175,
+      "language": "PowerShell",
+      "lines": 219,
       "repositories": [
-        "CRUD-Java"
-      ]
-    },
-    {
-      "language": "HTML",
-      "lines": 16,
-      "repositories": [
-        "Portifolio"
+        "ApoloSurvey-MVP-"
       ]
     }
   ]

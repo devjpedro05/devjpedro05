@@ -4,7 +4,28 @@ import os from "node:os";
 import path from "node:path";
 
 const username = process.env.GITHUB_USERNAME || "devjpedro05";
-const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
+const isGitHubActions = process.env.GITHUB_ACTIONS === "true";
+const localGhToken = (() => {
+  if (isGitHubActions) return "";
+
+  try {
+    return execFileSync("gh", ["auth", "token"], {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+  } catch {
+    return "";
+  }
+})();
+const token =
+  process.env.PROFILE_STATS_TOKEN ||
+  process.env.GH_TOKEN ||
+  localGhToken ||
+  process.env.GITHUB_TOKEN ||
+  "";
+const canReadPrivateRepos = Boolean(
+  process.env.PROFILE_STATS_TOKEN || process.env.GH_TOKEN || (!isGitHubActions && localGhToken),
+);
 const repoLimit = Number(process.env.REPO_LIMIT || 50);
 const maxRows = Number(process.env.MAX_LANGUAGE_ROWS || 8);
 const rootDir = process.cwd();
@@ -113,13 +134,16 @@ async function listRepositories() {
   const repos = [];
 
   for (let page = 1; page <= 5; page += 1) {
-    const url = `https://api.github.com/users/${username}/repos?type=owner&sort=updated&per_page=100&page=${page}`;
+    const url = canReadPrivateRepos
+      ? `https://api.github.com/user/repos?visibility=all&affiliation=owner&sort=updated&per_page=100&page=${page}`
+      : `https://api.github.com/users/${username}/repos?type=owner&sort=updated&per_page=100&page=${page}`;
     const data = await githubJson(url);
     repos.push(...data);
     if (data.length < 100) break;
   }
 
   return repos
+    .filter((repo) => !repo.owner || repo.owner.login.toLowerCase() === username.toLowerCase())
     .filter((repo) => !repo.fork && !repo.archived)
     .filter((repo) => repo.name.toLowerCase() !== username.toLowerCase())
     .slice(0, repoLimit);
