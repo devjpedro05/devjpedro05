@@ -3,18 +3,20 @@
   "rows": [
     {
       "language": "C#",
-      "lines": 77794,
+      "lines": 79989,
       "repositories": [
         "ApoloSurvey-MVP-",
         "CRUD-C-",
+        "CaptureLab.Wpf",
         "SistemaACS"
       ]
     },
     {
       "language": "XAML",
-      "lines": 25430,
+      "lines": 25623,
       "repositories": [
-        "ApoloSurvey-MVP-"
+        "ApoloSurvey-MVP-",
+        "CaptureLab.Wpf"
       ]
     },
     {
@@ -94,9 +96,10 @@
     },
     {
       "language": "PowerShell",
-      "lines": 219,
+      "lines": 234,
       "repositories": [
-        "ApoloSurvey-MVP-"
+        "ApoloSurvey-MVP-",
+        "CaptureLab.Wpf"
       ]
     }
   ]
