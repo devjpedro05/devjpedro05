@@ -51,7 +51,7 @@
   <text x="610" y="58" fill="#94A3B8" font-size="12" font-weight="600">Principal</text>
   <text x="610" y="86" fill="#F8FAFC" font-size="24" font-weight="800">C#</text>
   <text x="808" y="84" fill="#67E8F9" font-size="13" font-weight="800" text-anchor="end">79.989 linhas</text>
-  <text x="808" y="112" fill="#93C5FD" font-size="12" font-weight="700" text-anchor="end">146.348 linhas no total</text>
+  <text x="808" y="112" fill="#93C5FD" font-size="12" font-weight="700" text-anchor="end">146.513 linhas no total</text>
 
   <g opacity="1">
     <rect x="28" y="123" width="804" height="46" rx="14" fill="url(#featuredRow)" opacity="0.75"/>
@@ -61,7 +61,7 @@
     <rect x="252" y="138" width="458" height="12" rx="6" fill="#223047" opacity="0.9"/>
     <rect x="252" y="138" width="458" height="12" rx="6" fill="#22D3EE" filter="url(#barGlow)"/>
     <rect x="730" y="128" width="70" height="28" rx="14" fill="#0B1224" stroke="#263853"/>
-    <text x="765" y="146" fill="#E0F2FE" font-size="12" font-weight="700" text-anchor="middle">54.7%</text>
+    <text x="765" y="146" fill="#E0F2FE" font-size="12" font-weight="700" text-anchor="middle">54.6%</text>
   </g>
   <g opacity="0.82">
     <rect x="28" y="177" width="804" height="46" rx="14" fill="#111C32" opacity="0.34"/>
@@ -77,9 +77,9 @@
     <rect x="28" y="231" width="804" height="46" rx="14" fill="#111C32" opacity="0.34"/>
     <text x="48" y="254" fill="#64748B" font-size="11" font-weight="700" letter-spacing="1.4">03</text>
     <text x="82" y="254" fill="#F8FAFC" font-size="16" font-weight="700">CSS</text>
-    <text x="82" y="273" fill="#93C5FD" font-size="12">11.949 linhas adicionadas</text>
+    <text x="82" y="273" fill="#93C5FD" font-size="12">12.046 linhas adicionadas</text>
     <rect x="252" y="246" width="458" height="12" rx="6" fill="#223047" opacity="0.9"/>
-    <rect x="252" y="246" width="68" height="12" rx="6" fill="#8B5CF6" filter="none"/>
+    <rect x="252" y="246" width="69" height="12" rx="6" fill="#8B5CF6" filter="none"/>
     <rect x="730" y="236" width="70" height="28" rx="14" fill="#0B1224" stroke="#263853"/>
     <text x="765" y="254" fill="#E0F2FE" font-size="12" font-weight="700" text-anchor="middle">8.2%</text>
   </g>
@@ -87,11 +87,11 @@
     <rect x="28" y="285" width="804" height="46" rx="14" fill="#111C32" opacity="0.34"/>
     <text x="48" y="308" fill="#64748B" font-size="11" font-weight="700" letter-spacing="1.4">04</text>
     <text x="82" y="308" fill="#F8FAFC" font-size="16" font-weight="700">JavaScript</text>
-    <text x="82" y="327" fill="#93C5FD" font-size="12">8.947 linhas adicionadas</text>
+    <text x="82" y="327" fill="#93C5FD" font-size="12">9.015 linhas adicionadas</text>
     <rect x="252" y="300" width="458" height="12" rx="6" fill="#223047" opacity="0.9"/>
-    <rect x="252" y="300" width="51" height="12" rx="6" fill="#67E8F9" filter="none"/>
+    <rect x="252" y="300" width="52" height="12" rx="6" fill="#67E8F9" filter="none"/>
     <rect x="730" y="290" width="70" height="28" rx="14" fill="#0B1224" stroke="#263853"/>
-    <text x="765" y="308" fill="#E0F2FE" font-size="12" font-weight="700" text-anchor="middle">6.1%</text>
+    <text x="765" y="308" fill="#E0F2FE" font-size="12" font-weight="700" text-anchor="middle">6.2%</text>
   </g>
   <g opacity="0.82">
     <rect x="28" y="339" width="804" height="46" rx="14" fill="#111C32" opacity="0.34"/>
