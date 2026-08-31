@@ -5,7 +5,7 @@
       "language": "C#",
       "lines": 79989,
       "repositories": [
-        "ApoloSurvey-MVP-",
+        "ApoloSurvey-Desktop",
         "CRUD-C-",
         "CaptureLab.Wpf",
         "SistemaACS"
@@ -15,18 +15,19 @@
       "language": "XAML",
       "lines": 25623,
       "repositories": [
-        "ApoloSurvey-MVP-",
+        "ApoloSurvey-Desktop",
         "CaptureLab.Wpf"
       ]
     },
     {
       "language": "CSS",
-      "lines": 12046,
+      "lines": 12274,
       "repositories": [
         "Dia-das-mulheres",
         "Portifolio",
         "Projects",
-        "formulacomercial-landingpage"
+        "formulacomercial-landingpage",
+        "taskly"
       ]
     },
     {
@@ -49,12 +50,13 @@
     },
     {
       "language": "HTML",
-      "lines": 4515,
+      "lines": 4531,
       "repositories": [
         "Dia-das-mulheres",
         "Portifolio",
         "Projects",
-        "formulacomercial-landingpage"
+        "formulacomercial-landingpage",
+        "taskly"
       ]
     },
     {
@@ -69,7 +71,7 @@
       "language": "C/C++",
       "lines": 1400,
       "repositories": [
-        "ApoloSurvey-MVP-"
+        "ApoloSurvey-Desktop"
       ]
     },
     {
@@ -98,8 +100,15 @@
       "language": "PowerShell",
       "lines": 234,
       "repositories": [
-        "ApoloSurvey-MVP-",
+        "ApoloSurvey-Desktop",
         "CaptureLab.Wpf"
+      ]
+    },
+    {
+      "language": "TypeScript",
+      "lines": 110,
+      "repositories": [
+        "taskly"
       ]
     }
   ]
