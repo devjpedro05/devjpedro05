@@ -21,7 +21,7 @@
     },
     {
       "language": "CSS",
-      "lines": 12274,
+      "lines": 12953,
       "repositories": [
         "Dia-das-mulheres",
         "Portifolio",
@@ -50,7 +50,7 @@
     },
     {
       "language": "HTML",
-      "lines": 4531,
+      "lines": 4547,
       "repositories": [
         "Dia-das-mulheres",
         "Portifolio",
@@ -72,6 +72,13 @@
       "lines": 1400,
       "repositories": [
         "ApoloSurvey-Desktop"
+      ]
+    },
+    {
+      "language": "TypeScript",
+      "lines": 700,
+      "repositories": [
+        "taskly"
       ]
     },
     {
@@ -102,13 +109,6 @@
       "repositories": [
         "ApoloSurvey-Desktop",
         "CaptureLab.Wpf"
-      ]
-    },
-    {
-      "language": "TypeScript",
-      "lines": 110,
-      "repositories": [
-        "taskly"
       ]
     }
   ]
